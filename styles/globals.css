@@ -1,5 +1,7 @@
-body {
-  background-color: hotpink;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 
 /*media queries */
