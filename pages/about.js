@@ -3,11 +3,13 @@ import {useState} from 'react'
 // special next.js images that speed up ssr caching 
 import Image from 'next/image'
 
+
+
 export default function About() {
     const [fontSize, setFontSize] = useState(3)
     return (
         
-        <div className={styles.divBorder}>
+        <div className=' container mx-auto mt-20 h-screen'>
           
             
             {/*  styled jsx exapmle */}

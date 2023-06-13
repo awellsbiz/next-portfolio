@@ -3,19 +3,30 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {AiOutlineClose, AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin, AiOutlineMenu} from 'react-icons/ai'
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 
 
 
 
 export default function Navbar() {
+    // useRef variable to get the navbar element and getboundingclientrect method
+    const navbarRef = useRef(null)
+    useEffect(() => {
+        if(navbarRef.current) {
+            const navbarRect = navbarRef.current.getBoundingClientRect();
+            console.log(navbarRect)
+        }
+    }, [])
+
     const [menuOpen, setMenuOpen] = useState(false)
     const handleNav = () => {
         setMenuOpen(!menuOpen)
     }
+   
+
     return (
-      <nav className="fixed w-full h-20 shadow-xl bg-white top-0">
+      <nav ref={navbarRef} className="fixed w-full h-20 shadow-xl bg-white top-0">
            <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
             <Link href="/">
             <Image
@@ -30,9 +41,9 @@ export default function Navbar() {
             </Link>
             <div>
                 <ul className="hidden sm:flex">
-                    {/* <Link href="/about">
+                    <Link href="/about">
                         <li className="ml-10 uppercase hover:border-b text-xl">About</li>
-                    </Link> */}
+                    </Link>
                     <Link href='/services'>
                         <li className="ml-10 uppercase hover:border-b text-xl">services</li>
                     </Link>
