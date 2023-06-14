@@ -26,7 +26,7 @@ export default function Navbar() {
    
 
     return (
-      <nav ref={navbarRef} className="fixed w-full h-20 shadow-xl bg-white top-0">
+      <nav ref={navbarRef} className="fixed w-full h-10 shadow-xl bg-white top-0">
            <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
             <Link href="/">
             <Image
@@ -41,7 +41,7 @@ export default function Navbar() {
             </Link>
             <div>
                 <ul className="hidden sm:flex">
-                    <Link href="/about">
+                    {/* <Link href="/about">
                         <li className="ml-10 uppercase hover:border-b text-xl">About</li>
                     </Link>
                     <Link href='/services'>
@@ -52,7 +52,7 @@ export default function Navbar() {
                     </Link>
                     <Link href='/contact'>
                         <li className="ml-10 uppercase hover:border-b text-xl">Contact</li>
-                    </Link>
+                    </Link> */}
                 
                 </ul>
             </div>

@@ -4,4 +4,6 @@
 
 
 /*media queries */
-
+html, body {
+    scroll-behavior: smooth;
+}

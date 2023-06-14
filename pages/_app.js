@@ -7,8 +7,7 @@ import 'tailwindcss/tailwind.css'
 
 export default function App({ Component, pageProps }) {
   return (
-  <div className="bg-green-900">
-  <Navbar />
+  <div className=" bg-zinc-500">
   
   {/* main page where things come from */}
  
@@ -16,7 +15,7 @@ export default function App({ Component, pageProps }) {
  
  
   <footer className=" flex text-center ">
-    © Anthony Wells {new Date().getFullYear()} GPLv3
+    © Anthony Wells {new Date().getFullYear()} GPLv3 (Footer add Logos)
   </footer>
   </div>
   )
