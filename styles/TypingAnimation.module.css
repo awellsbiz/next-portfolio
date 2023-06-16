@@ -38,14 +38,29 @@
     animation-delay: 2s;
    
 }
+.subHeading2 {
+    font-size: 2rem;
+    font-weight: 100;
+    color: white;
+    margin-top: 1rem;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+   
+}
 
 .scrollDown {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem; /* Adjust the margin as needed */
+    margin-top: 2rem; /* Adjust the margin as needed */
+    margin-bottom: 1rem;
     animation: glow 1s infinite alternate;
    
+}
+.links {
+    display: flex;
+  justify-content: center;
+  gap: 25px;
 }
 
 @keyframes glow {
@@ -71,9 +86,19 @@
 
 @media (max-width: 768px) {
     .text {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
     }
     .subHeading {
         font-size: 1rem;
+    }
+    .subHeading2 {
+        font-size: 1rem;
+    }
+    .links {
+        gap: 25px;
+        margin-top: 10px;
     }
 }

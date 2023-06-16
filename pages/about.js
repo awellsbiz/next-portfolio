@@ -13,10 +13,8 @@ export default function About() {
           
           <div className=" bg-neutral-600">
             <div className={styles.box1}>
-            <p>I am box 1</p>  
-            <p>I am box 1</p>  
-            <p>I am box 1</p>  
-            <p>I am box 1</p>  
+              
+              
             </div>          
               {/* add github and linked-in logo here that works as links */}
               {/* <h1 className=' text-center font-bold text-lg text-yellow-500'> Welcome to My Portfolio! </h1>

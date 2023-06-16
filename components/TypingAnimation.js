@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import styles from '@/styles/TypingAnimation.module.css'
-import { AiOutlineArrowDown } from 'react-icons/ai';
+import { AiOutlineArrowDown, AiOutlineLinkedin, AiOutlineGithub, AiOutlineFileText } from 'react-icons/ai';
+import Link from 'next/link'
 
 
 const TypingAnimation = ({ text, speed }) => {
@@ -39,8 +40,17 @@ const TypingAnimation = ({ text, speed }) => {
           <p className={styles.subHeading}>
             {subText}
           </p>
+          <p className={styles.subHeading2}> React | Django | PostgreSQL</p>
           <div className={styles.scrollDown}>
-              <AiOutlineArrowDown size={50} />
+              <AiOutlineArrowDown size={27} /> 
+            </div>
+            <div className={styles.links}>
+             <Link href='https://www.linkedin.com/in/awells91' className={styles.links}> <AiOutlineLinkedin size={30} className=' mx-auto' /></Link>
+             
+              <Link href='https://github.com/awellsbiz' className={styles.links}><AiOutlineGithub size={30} className=' mx-auto'/> </Link>
+              
+              <Link href='https://docs.google.com/document/d/1efuLRUtLvXwkOv10GAth3UacO26smOK92LAPJD_oABc/edit?usp=sharing' className={styles.links}> <AiOutlineFileText size={30} className=' mx-auto' /></Link>
+            
             </div>
         </div>
       )}
