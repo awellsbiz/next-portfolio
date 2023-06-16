@@ -1,19 +1,9 @@
-/* here in a css module, you cannot put element selectors*/
-/* 
-body {
-    background-color: hotpink;
-}
+.box1 {
+    max-height: 100px;
+    max-width: 100px;
+    background-color: red;
+    position: relative;
+    top: 0;
+    overflow: scroll;
 
-p {
-    color: chartreuse
-} */
-
-.greenText {
-    color: chartreuse;
-}
-
-.divBorder {
-    border-style: solid;
-    border-radius: 10px;
-    border-color: black;
 }

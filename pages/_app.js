@@ -7,7 +7,7 @@ import 'tailwindcss/tailwind.css'
 
 export default function App({ Component, pageProps }) {
   return (
-  <div className=" bg-zinc-500">
+  <div>
   
   {/* main page where things come from */}
  
