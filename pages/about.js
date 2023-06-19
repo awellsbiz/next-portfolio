@@ -17,11 +17,14 @@ export default function About() {
 <div className={styles.profileBox}>
 
 <div className={styles.profileImage}>
-  <img
+  <Image
     src="/profile.jpg"
     alt="Picture of the author"
+    height={200}
+    width={200}
     className={styles.profileImage}
   />
+
 
 </div>
 

@@ -12,7 +12,7 @@ export default function Projects() {
         <div className={styles.projectContainer}>
             <div className={styles.project}>
                 
-                <a href="https://cinesearch.vercel.app/">
+                <a href="https://cinesearch-mavericks.netlify.app/">
                 <img src="/cinesearch.png" alt="Project1" />
                 </a> 
         </div>
