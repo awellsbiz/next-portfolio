@@ -1,7 +1,10 @@
+import styles from '../styles/Projects.module.css'
+
+
 export default function Projects() {
     return (
-       <div className="container mx-auto mt-20 h-screen">
-        <h1>This is the services</h1>
+       <div id="projects" className={styles.mainContainer}>
+        <h1>This is project section</h1>
         </div>
     )
 }

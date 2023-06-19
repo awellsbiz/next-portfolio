@@ -1,0 +1,20 @@
+THIS IS TO ADD TO THE NAV BAR
+
+  <div className={styles.links}>
+              {/* <div>
+              <p> This i where </p>
+              </div> */}
+              <div>
+             <Link href='https://www.linkedin.com/in/awells91' > <AiOutlineLinkedin size={30} className=' mx-auto' /></Link>
+              </div>
+              <div>
+             
+              <Link href='https://github.com/awellsbiz' ><AiOutlineGithub size={30} className=' mx-auto'/> </Link>
+              </div>
+              <div>
+              <Link href='https://docs.google.com/document/d/1efuLRUtLvXwkOv10GAth3UacO26smOK92LAPJD_oABc/edit?usp=sharing' > <AiOutlineFileText size={30} className=' mx-auto' /></Link>
+              </div>
+            
+            </div>
+
+-------------

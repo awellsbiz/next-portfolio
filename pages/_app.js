@@ -14,8 +14,8 @@ export default function App({ Component, pageProps }) {
   <Component {...pageProps} />
  
  
-  <footer className=" flex text-center ">
-    © Anthony Wells {new Date().getFullYear()} GPLv3 (Footer add Logos)
+  <footer className="text-center items-center text-white">
+    © Anthony Wells {new Date().getFullYear()} GPLv3
   </footer>
   </div>
   )

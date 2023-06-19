@@ -1,9 +1,141 @@
-.box1 {
-    max-height: 100px;
-    max-width: 100px;
-    background-color: red;
-    position: relative;
-    top: 0;
-    overflow: scroll;
+.about {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(247, 163, 132);
+    
+}
+
+.copywrightBox{
+    background-color: rgb(199, 123, 96);
+    opacity: 30px;
+    position: relative; 
+    max-width: 50%;
+    margin: 30px;
+    font-size: 1.5rem;
+    
+}
+
+.profileBox {
+    background-color: rgb(199, 123, 96);
+    position: relative; 
+    width: 100%;
+    max-width: 50%;
+    margin: 30px;
+    font-size: 1.5rem;
+    
+}
+.aboutSection {
+    margin: 20px 0px 0px 0px;
+}
+.profileImage {
+    border-radius: 50%; 
+    height: 350px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: block;
 
 }
+.heading {
+    color: black;
+    width: fit-content;
+    margin: 0 auto;
+
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    text-decoration: underline;
+    
+    background-color: white
+}   
+.copywright {
+    color: white;
+    text-align: center;
+    margin: 10px 15px 20px 15px;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    word-spacing: 3px;
+
+
+}
+
+.techCopywright li {
+    display: flex;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px 5px 10px 15px;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    word-spacing: 10px;
+
+}
+
+.techSection ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+  
+.links {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 15px 10px 15px;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    word-spacing: 2px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.links:hover {
+    color: black;
+    text-decoration: underline;
+    font-weight: 500;
+}   
+.resumeText {
+  
+
+}
+
+
+@media (max-width: 768px) {
+    .about {
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+    }
+    .profileBox {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 0px;
+        height: 100%;
+    }
+    .copywrightBox {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        
+    }
+    .profileImage {
+        border-radius: 50%; 
+        height: 250px;
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: block;
+
+    }
+    
+}
+
