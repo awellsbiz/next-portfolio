@@ -135,8 +135,7 @@
         max-width: 100%;
         
     }
-    .profileImage {
-        border-radius: 50%; 
+    .profileImage { 
         height: 250px;
         width: 200px;
         margin: 0 auto;

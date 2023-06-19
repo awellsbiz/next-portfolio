@@ -20,7 +20,7 @@ export default function Projects() {
 
         <div className={styles.projectCopy}>
             <div className={styles.projectTitle}>
-            <a href="https://cinesearch.vercel.app/">
+            <a href=" https://cinesearch-mavericks.netlify.app/">
                 <h2>CineSearch</h2>
                 </a>
                 </div>
