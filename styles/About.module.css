@@ -2,12 +2,13 @@
     display: flex;
     height: 100vh;
     width: 100vw;
-    background-color: rgb(247, 163, 132);
+    background-color: coral;
     
 }
 
 .copywrightBox{
-    background-color: rgb(199, 123, 96);
+    background-color: rgba(199, 123, 96, 0.475);
+    box-shadow: 0px 0px 10px 0px rgba(18, 18, 18, 0.75);
     opacity: 30px;
     position: relative; 
     max-width: 50%;
@@ -17,7 +18,8 @@
 }
 
 .profileBox {
-    background-color: rgb(199, 123, 96);
+    background-color: rgba(199, 123, 96, 0.475);
+    box-shadow: 0px 0px 10px 0px rgba(18, 18, 18, 0.75);
     position: relative; 
     width: 100%;
     max-width: 50%;
@@ -28,12 +30,12 @@
 .aboutSection {
     margin: 30px 0px 0px 0px;
 }
-.profileImage {
-    border-radius: 50%; 
-    height: 350px;
-    width: 300px;
+.profileImage { 
+    height: 250px;
+    width: 200px;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     display: block;
 
 }
@@ -47,7 +49,6 @@
     font-size: 1.5rem;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
-    text-decoration: underline;
     
     background-color: white
 }   
@@ -75,6 +76,7 @@
 
 }
 
+
 .techSection {
     margin: 50px 0px 0px 0px;
 }
@@ -94,7 +96,7 @@
     flex-wrap: wrap;
     align-items: center;
     margin: 10px 0px 10px 190px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'Courier New', Courier, monospace;
     color: white;
     text-decoration: none;
@@ -104,6 +106,9 @@
     color: black;
     text-decoration: underline;
     font-weight: 500;
+    background-color: white;
+    width: fit-content;
+    transition: background-color 0.5s ease-in-out
 }   
 .resumeText {
   
@@ -113,7 +118,7 @@
 
 @media (max-width: 768px) {
     .about {
-        height: 100vh;
+        height: auto;
         width: 100vw;
         flex-direction: column;
     }

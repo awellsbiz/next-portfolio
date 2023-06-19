@@ -18,7 +18,7 @@ export default function About() {
 
 <div className={styles.profileImage}>
   <img
-    src="/AnthonyWells.jpg"
+    src="/profile.jpg"
     alt="Picture of the author"
     className={styles.profileImage}
   />

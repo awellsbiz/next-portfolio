@@ -32,8 +32,8 @@ export default function Home() {
       {navbar}
       <Hero onAnimationComplete={handleAnimationComplete} />
       <About />
-      {/* <Projects />
-      <Contact /> */}
+      <Projects />
+      <Contact /> 
     </main>
   );
 }
