@@ -139,6 +139,17 @@
         display: block;
 
     }
+    .links {
+        margin: 10px 0px 10px 125px;
+        
+    }
+    .heading {
+       text-align: left;
+    }
+    .copywright {
+        text-align: center;
+         
+    }
     
 }
 

@@ -63,7 +63,7 @@ export default function About() {
         <div className={styles.aboutSection}>
         <h1 className={styles.heading}>About Me</h1>
         <p className={styles.copywright}>
-        I'm a Skilled and experienced full-stack software engineer out of Los Angeles, CA. Drawing from my 12+ years of experience in the
+             I'm a Skilled and experienced full-stack software engineer out of Los Angeles, CA. Drawing from my 12+ years of experience in the
           restaurant and entertainment sectors, I bring a high level of
           proficiency, structure, organization, and creative thinking to my software solutions.
 
