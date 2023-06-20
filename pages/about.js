@@ -11,6 +11,7 @@ import {
 } from "react-icons/ai";
 
 export default function About() {
+ 
   return (
     <div id="about" className={styles.about}>
 
@@ -18,10 +19,10 @@ export default function About() {
 
 <div className={styles.profileImage}>
   <Image
-    src="/profile.jpg"
+    src="/new.jpg"
     alt="Picture of the author"
-    height={200}
-    width={200}
+    height={350}
+    width={500}
     className={styles.profileImage}
   />
 
