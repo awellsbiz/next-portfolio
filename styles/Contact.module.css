@@ -3,7 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: fit-content;
+  width: 100vw;
+  height: 100vh;
   background-color: coral;
 }
 .content {
@@ -14,6 +15,8 @@
   width: 80%;
   height: 80%;
   margin-bottom: 50px;
+  background-color: #f8a058;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 
 }
 .contactContainer {
@@ -23,8 +26,6 @@
   justify-content: center;
   width: 80%;
   height: auto;
-  background-color: rgba(199, 123, 96, 0.475);
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   gap: 20px;
 }
 .resumeIcon {
@@ -34,10 +35,10 @@
 .links {
   color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 5px;
 }
 .links:hover {
   cursor: pointer;
@@ -52,8 +53,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: auto;
-  height: 10%;
   margin-bottom: 35px;
   background-color: rgb(255, 255, 255);
   font-size: 2rem;
@@ -66,15 +65,10 @@
 @media (max-width: 768px) {
   .content {
     width: 100%;
-    height: 100%;
+    height: 60%;
   }
   .contactContainer {
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-  }
-  .links {
-    flex-direction: column;
+    flex-direction: column; ;
     width: 100%;
     height: 100%;
   }
@@ -83,5 +77,13 @@
   }
   .title {
     font-size: 1.5rem;
+  }
+  .label {
+    margin-top: 10px;
+  }
+  .mainContainer {
+    width: 100vw;
+    height: 100vh;
+    margin-left: 10px;
   }
 }

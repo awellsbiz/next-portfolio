@@ -17,34 +17,35 @@ export default function About() {
 
 <div className={styles.profileBox}>
 
-<div className={styles.profileImage}>
+{/* <div className={styles.profileImage}> */}
   <Image
-    src="/new.jpg"
+    src="/update.jpg"
     alt="Picture of the author"
-    height={350}
-    width={500}
-    className={styles.profileImage}
+    width={400}
+    height= {300}
+    
   />
 
 
-</div>
 
-<div className= {styles.links}>
-      <AiOutlineLinkedin className={styles.resumeIcon} size={30} />
+{/* </div> */}
+
+{/* <div className= {styles.links}>
+      <AiOutlineLinkedin className={styles.resumeIcon} size={25} />
   <a href="https://www.linkedin.com/in/awells91/">
       <span className={styles.resumeText}>LinkedIn</span>
      
   </a>
 </div>
 <div className= {styles.links}>
-      <AiOutlineTwitter className={styles.resumeIcon} size={30} />
+      <AiOutlineTwitter className={styles.resumeIcon} size={25} />
   <a href="https://twitter.com/_a_wells">
       <span className={styles.resumeText}>Twitter</span>
      
   </a>
 </div>
 <div className= {styles.links}>
-      <AiOutlineGithub className={styles.resumeIcon} size={30} />
+      <AiOutlineGithub className={styles.resumeIcon} size={25} />
   <a href="https://github.com/awellsbiz" download>
       <span >GitHub</span>
      
@@ -58,7 +59,7 @@ export default function About() {
      
   </a>
   
-</div>
+</div> */}
 
 </div>
 
@@ -78,19 +79,19 @@ export default function About() {
         <h1 className={styles.heading}>Techs</h1>
 
            <ul className={styles.techCopywright}>
-            <li>JavaScript</li>
-            <li>Python</li>
-             <li>HTML</li>
-            <li>CSS</li>
-            <li>React</li>
-            <li>Django</li>
-            <li>Next.js</li>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>PostgreSQL</li>
-            <li>Sequelize</li>
-           <li>MongoDB</li>
-            <li>Git</li>
+            <li>JavaScript | </li>
+            <li>Python | </li>
+             <li>HTML | </li>
+            <li>CSS | </li>
+            <li>React | </li>
+            <li>Django | </li>
+            <li>Next.js | </li>
+            <li>Node.js  |</li>
+            <li>Express | </li>
+            <li>PostgreSQL | </li>
+            <li>Sequelize | </li>
+           <li>MongoDB | </li>
+            <li>Git |</li>
             <li>GitHub</li>
     
             

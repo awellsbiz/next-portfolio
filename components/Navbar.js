@@ -30,6 +30,7 @@ export default function Navbar() {
     const handleNav = () => {
         setMenuOpen(!menuOpen)
     }
+    
    
 
     return (
