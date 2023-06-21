@@ -1,7 +1,8 @@
 // top top level of next app
 import Navbar from "@/components/Navbar";
 import "../styles/globals.css";
-import 'tailwindcss/tailwind.css'
+import 'tailwindcss/tailwind.css';
+import { Analytics } from '@vercel/analytics/react';
 
 
 
