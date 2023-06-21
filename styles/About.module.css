@@ -123,7 +123,7 @@
         height: 100vh;
         width: 100vw;
         gap: 1px;
-        overflow-y: scroll;
+        
     }
     .profileBox {
         height: 100vh;
@@ -134,15 +134,13 @@
 
     .copywrightBox {
         margin-left: 30px;
-        width: 100%;
-        height: 100vh;
+        width: 100vw;
+        height: auto;
+        
         
     }
-    .textCopywright {
-        margin-left: 30px;
-        width: 100%;
-        height: 100vh;
-        
+    .techSection {
+        overflow: hidden;
     }
     .profileImage { 
         
@@ -160,6 +158,7 @@
     .icon { font-size: 20px; }
     .heading {
        text-align: left;
+       
     }
     .copywright {
         text-align: center;
