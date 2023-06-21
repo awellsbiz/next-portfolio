@@ -13,6 +13,7 @@ export default function App({ Component, pageProps }) {
   {/* main page where things come from */}
  
   <Component {...pageProps} />
+  <Analytics />
  
  
   <footer className="text-center items-center text-white">
