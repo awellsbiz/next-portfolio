@@ -36,6 +36,7 @@
 .link:hover {
     background-color: #ffffff;
     color: #000000;
+    cursor: pointer;
 }
 .active {
     background-color: #ffffff;
