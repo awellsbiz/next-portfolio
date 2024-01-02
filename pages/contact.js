@@ -35,11 +35,11 @@ export default function Contact() {
           </div>
 
           <div className={styles.links}>
-            <AiOutlineFileText className={styles.resumeIcon} size={30} />
             <a
-              href="https://docs.google.com/document/d/e/2PACX-1vQ1SRm_xjFMf7CTsLocjlcXVWiIiwrfmS2KNeqHGmz6O45x5RDR0hlLh3eEgUmSP6BPkfnQfFKW588r/pub"
+              href="https://docs.google.com/document/d/1t6kSEi-AIB5TwypXWxP56gy_G_NqR7D310Bv88RPHgQ/edit?usp=sharing"
               download
             >
+            <AiOutlineFileText className={styles.resumeIcon} size={30} />
               <span className={styles.resumeText}>Resume</span>
             </a>
           </div>
