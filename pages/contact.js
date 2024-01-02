@@ -16,27 +16,27 @@ export default function Contact() {
         </div>
         <div className={styles.contactContainer}>
           <div className={styles.links}>
-            <AiOutlineLinkedin className={styles.resumeIcon} size={30} />
             <a href="https://www.linkedin.com/in/awells91/">
+            <AiOutlineLinkedin className={styles.resumeIcon} size={30} />
               <span className={styles.resumeText}>LinkedIn</span>
             </a>
           </div>
           <div className={styles.links}>
-            <AiOutlineTwitter className={styles.resumeIcon} size={30} />
             <a href="https://twitter.com/_a_wells">
+            <AiOutlineTwitter className={styles.resumeIcon} size={30} />
               <span className={styles.resumeText}>Twitter</span>
             </a>
           </div>
           <div className={styles.links}>
-            <AiOutlineGithub className={styles.resumeIcon} size={30} />
             <a href="https://github.com/awellsbiz" download>
+            <AiOutlineGithub className={styles.resumeIcon} size={30} />
               <span>GitHub</span>
             </a>
           </div>
 
           <div className={styles.links}>
             <a
-              href="https://docs.google.com/document/d/1t6kSEi-AIB5TwypXWxP56gy_G_NqR7D310Bv88RPHgQ/edit?usp=sharing"
+              href="https://docs.google.com/document/d/e/2PACX-1vQ1SRm_xjFMf7CTsLocjlcXVWiIiwrfmS2KNeqHGmz6O45x5RDR0hlLh3eEgUmSP6BPkfnQfFKW588r/pub"
               download
             >
             <AiOutlineFileText className={styles.resumeIcon} size={30} />
@@ -45,8 +45,8 @@ export default function Contact() {
           </div>
 
           <div className={styles.links}>
-            <AiOutlineMail className={styles.resumeIcon} size={30} />
             <a href="mailto:anthony@anthonywells.codes">
+            <AiOutlineMail className={styles.resumeIcon} size={30} />
               <span className={styles.resumeText}>Email</span>
             </a>
           </div>
