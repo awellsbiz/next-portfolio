@@ -37,7 +37,7 @@ export default function Contact() {
           <div className={styles.links}>
             <AiOutlineFileText className={styles.resumeIcon} size={30} />
             <a
-              href="https://docs.google.com/document/d/1efuLRUtLvXwkOv10GAth3UacO26smOK92LAPJD_oABc/edit?usp=sharing"
+              href="https://docs.google.com/document/d/e/2PACX-1vQ1SRm_xjFMf7CTsLocjlcXVWiIiwrfmS2KNeqHGmz6O45x5RDR0hlLh3eEgUmSP6BPkfnQfFKW588r/pub"
               download
             >
               <span className={styles.resumeText}>Resume</span>
