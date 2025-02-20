@@ -1,48 +1,53 @@
-import { AiOutlineLink } from 'react-icons/ai'
-import styles from '../styles/Projects.module.css'
-import Image from 'next/image'
-
+import { AiOutlineLink } from 'react-icons/ai';
 
 export default function Projects() {
-    return (
-       <div id="projects" className={styles.mainContainer}>
-    
-
-
-    
-            <div className={styles.project}>
-                <a href="https://cinesearch-mavericks.netlify.app/">
-                <Image 
-                src="/cinesearch.png" 
-                alt="Project1" 
-                width={400}
-                height={300}
-                />
-                </a> 
+  return (
+    <div id="projects" class="outline outline-pink-400 p-2">
+      <div className="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img src="/cinesearch.png" alt="Shoes" />
+        </figure>
+        <div className="card-body">
+          <h2 className="card-title flex justify-center">
+            CineSearch
+            <div className="badge badge-primary">Full Stack App</div>
+          </h2>
+          <p>Search for movies and TV shows</p>
+          <div className="card-actions justify-center">
+            <div className="badge badge-outline">React</div>
+            <div className="badge badge-outline">Node.js</div>
+            <div className="badge badge-outline">Express</div>
+            <div className="badge badge-outline">MongoDB</div>
+            <div className="badge badge-outline">OMDB API</div>
+          </div>
+          <a
+            href="https://cinesearch-mavericks.netlify.app/"
+            class="flex justify-center"
+          >
+            <AiOutlineLink size={25} /> Visit Site
+          </a>
         </div>
-
-
-        <div className={styles.projectCopy}>
-            <div className={styles.projectTitle}>
-            <a href=" https://cinesearch-mavericks.netlify.app/">
-                <h2 className={styles.h2}>CineSearch</h2>
-                </a>
-                
-                {/* <div className={styles.projectDescription}> */}
-                
-                    <p1>Search for movies and TV shows </p1> 
-                        <h2 className={styles.h2}>Techs</h2> 
-
-                        <p1>OMDB API | MongoDB | Express | React | Node.js</p1>
-                       <a href=" https://cinesearch-mavericks.netlify.app/"> <p2>
-                        <AiOutlineLink className={styles.icon} size={25}/> Visit Site
-                        </p2></a>
-                    {/* </div> */}
-
-                    </div>
+      </div>
+      <div className="card bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img src="/PeakySS.png" alt="Shoes" />
+        </figure>
+        <div className="card-body">
+          <h2 className="card-title flex justify-center">
+            Peaky Blinds
+            <div className="badge badge-secondary">No Code App</div>
+          </h2>
+          <p>Website for a Blinds Company in Florida</p>
+          <div className="card-actions justify-center">
+            <div className="badge badge-outline badge-primary">Webflow</div>
+            <div className="badge badge-outline">Javascript</div>
+            <div className="badge badge-outline">Go High Level</div>
+          </div>
+          <a href="https://peakyblindsus.com/" class="flex justify-center">
+            <AiOutlineLink size={25} /> Visit Site
+          </a>
         </div>
-        </div>
-    
-    
-    )
+      </div>
+    </div>
+  );
 }

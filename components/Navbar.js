@@ -1,53 +1,43 @@
 // built in link component to link to routes
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import {AiOutlineClose, AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin, AiOutlineMenu} from 'react-icons/ai'
-import { useState, useRef, useEffect } from "react";
-import styles from '../styles/Navbar.module.css'
-import ScrollLink from "./ScrollLink";
-
-
-
-
-
+import React from 'react';
+import { useState, useRef, useEffect } from 'react';
+import ScrollLink from './ScrollLink';
 
 export default function Navbar() {
-    // useRef variable to get the navbar element and getboundingclientrect method
-    const navbarRef = useRef(null)
-    const [isVisible, setIsVisible] = useState(false)
-
-    useEffect(() => {
-        setIsVisible(true)
-        
-        if(navbarRef.current) {
-            const navbarRect = navbarRef.current.getBoundingClientRect();
-            console.log(navbarRect)
-        }
-    }, [])
-
-    const [menuOpen, setMenuOpen] = useState(false)
-    const handleNav = () => {
-        setMenuOpen(!menuOpen)
-    }
-    
-   
-
-    return (
-      <nav ref={navbarRef} className={`${styles.navBar} ${isVisible ? styles.fadeIn : ''}`}>
-            
-                <ul className={styles.links}>
-                    <ScrollLink to="about">
-                        <li className={styles.link}>About</li>
-                    </ScrollLink>
-                    <ScrollLink to='projects'>
-                        <li className={styles.link}>Projects</li>
-                    </ScrollLink>
-                    <ScrollLink to='contact'>
-                        <li className={styles.link}>Contact</li>
-                    </ScrollLink>
-                </ul>
-
-        </nav>
-    )
+  return (
+    <nav class="navbar sticky top-0 mx-auto flex items-center justify-center rounded-full p-2 shadow dark:bg-gray-700 max-w-xs bg-white z-50">
+      <a class="btn btn-ghost rounded-full text-xl">Anthony Wells </a>
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-circle btn-ghost">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="inline-block h-5 w-5 stroke-current"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+        >
+          <ScrollLink to="about">
+            <li>About</li>
+          </ScrollLink>
+          <ScrollLink to="projects">
+            <li>Projects</li>
+          </ScrollLink>
+          <ScrollLink to="contact">
+            <li>Contact</li>
+          </ScrollLink>
+        </ul>
+      </div>
+    </nav>
+  );
 }

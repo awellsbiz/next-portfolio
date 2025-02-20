@@ -1,18 +1,21 @@
 import React from 'react';
-import { Link } from 'react-scroll';
 
-const ScrollLink = ({ to, children }) => {
+export default function ScrollLink({ to, children }) {
+  const handleClick = (e) => {
+    e.preventDefault();
+
+    const element = document.getElementById(to);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
-    <Link
-      to={to}
-      smooth={true}
-      duration={250}
-      offset={-50} // Adjust the offset as needed to align with your navbar
-    >
+    <a href={`#${to}`} onClick={handleClick}>
       {children}
-    </Link>
+    </a>
   );
-};
-
-export default ScrollLink;
-
+}
