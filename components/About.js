@@ -4,11 +4,11 @@ import Contact from "./Contact";
 
 
 const About = () => (
-  <div id="about" class="card bg-neutral-800 shadow-lg p-4 sticky top-0">
-    <div class="flex justify-center">
-      <div class="text-center flex flex-col items-center gap-4">
-        <div class="avatar p-2">
-          <div class="max-w-xs rounded-full">
+  <div id="about" className="card bg-neutral-800 shadow-lg p-4 sticky top-0">
+    <div className="flex justify-center">
+      <div className="text-center flex flex-col items-center gap-4">
+        <div className="avatar p-2">
+          <div className="max-w-xs rounded-full">
             <Image
               src="/update.jpg"
               alt="Picture of the author"
@@ -17,8 +17,8 @@ const About = () => (
             />
           </div>
         </div>
-        <h1 class="text-5xl font-bold">Anthony Wells</h1>
-        <h2 class="inline-block text-xl bg-slate-600 p-2 rounded-2xl">
+        <h1 className="text-5xl font-bold">Anthony Wells</h1>
+        <h2 className="inline-block text-xl bg-slate-600 p-2 rounded-2xl">
           Full Stack Software Developer
         </h2>
         <div>
