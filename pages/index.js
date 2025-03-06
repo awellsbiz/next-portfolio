@@ -9,37 +9,35 @@ import Contact from "../components/Contact";
 
 export default function Home() {
   return (
-    <div className="text-white p-6">
+    <div className="text-white p-6 h-screen overflow-hidden">
       <Head>
         <title>Anthony Wells - Portfolio</title>
         <meta name="description" content="Anthony Wells' portfolio" />
       </Head>
-      <main className="block md:grid md:grid-cols-3 gap-4">
-        {/* Column 1 */}
-        <div className="md:col-span-1 space-y-4">
-          {/* Sticky only on medium screens and above */}
-          <div className="md:sticky md:top-0 md:h-screen">
+      
+      {/* Use full height for the layout & prevent overall scrolling */}
+      <main className="md:grid md:grid-cols-3 gap-4 h-full">
+        
+        {/* Column 1 - About (Sticky) */}
+        <div className="md:col-span-1 space-y-4 h-full">
+          <div className="md:sticky md:top-0 h-full flex flex-col">
             <About />
           </div>
-          <div className="block md:hidden space-y-4">
+        </div>
+
+        {/* Column 2 - Skills & Projects (Sticky) */}
+        <div className="hidden md:block md:col-span-1 space-y-4 h-full">
+          <div className="md:sticky md:top-0 h-full flex flex-col">
             <Skills />
             <Projects />
-            <Experience />
-            <Education />
           </div>
         </div>
 
-        {/* Column 2 */}
-        <div className="hidden md:block md:col-span-1 space-y-4 md:sticky md:top-0 md:h-screen">
-          <Skills />
-          <Projects />
-          <Education />
-        </div>
-
-        {/* Column 3 (Scrollable) */}
-        <div className="hidden md:block md:col-span-1 space-y-1 overflow-y-auto h-screen">
+        {/* Column 3 - The Only Scrollable Column */}
+        <div className="hidden md:block md:col-span-1 space-y-4 overflow-y-auto h-screen">
           <Experience />
         </div>
+
       </main>
     </div>
   );
