@@ -13,16 +13,17 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = (event) => {
-      if (scrollableColumnRef.current) {
-        // Prevent default page scroll
-        event.preventDefault();
-        // Scroll only the third column
-        scrollableColumnRef.current.scrollTop += event.deltaY;
+      // Only apply the effect if the screen width is 768px or larger (md breakpoint)
+      if (window.innerWidth >= 768 && scrollableColumnRef.current) {
+        event.preventDefault(); // Prevent default page scrolling
+        scrollableColumnRef.current.scrollTop += event.deltaY; // Scroll only the third column
       }
     };
 
-    // Attach event listener
-    window.addEventListener("wheel", handleScroll, { passive: false });
+    // Attach event listener only on desktops
+    if (window.innerWidth >= 768) {
+      window.addEventListener("wheel", handleScroll, { passive: false });
+    }
 
     return () => {
       // Cleanup event listener when component unmounts
@@ -31,7 +32,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="text-white p-6 h-screen overflow-hidden">
+    <div className="text-white p-6 md:h-screen md:overflow-hidden">
       <Head>
         <title>Anthony Wells - Portfolio</title>
         <meta name="description" content="Anthony Wells' portfolio" />
@@ -46,7 +47,7 @@ export default function Home() {
         </div>
 
         {/* Column 2 - Skills & Projects (Sticky) */}
-        <div className="hidden md:block md:col-span-1 space-y-4 h-full">
+        <div className="md:col-span-1 space-y-4 h-full">
           <div className="md:sticky md:top-0 h-full flex flex-col gap-3">
             <Skills />
             <Projects />
@@ -56,7 +57,7 @@ export default function Home() {
         {/* Column 3 - The Only Scrollable Column */}
         <div
           ref={scrollableColumnRef}
-          className="hidden md:block md:col-span-1 space-y-4 overflow-y-auto h-screen"
+          className="md:col-span-1 space-y-4 md:overflow-y-auto md:h-screen"
         >
           <Experience />
         </div>
