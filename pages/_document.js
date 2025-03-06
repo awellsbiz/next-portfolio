@@ -7,7 +7,7 @@ export default function Document() {
       <Head>
         <link rel="icon" href="public/favicon.ico" />
       </Head>
-      <body class="min-h-screen flex flex-col items-center justify-center bg-base-100 text-base-content p-4 overflow-x-hidden w-full outline outline-yellow-400 bg-customBg-primary">
+      <body >
         <div>
           <Main />
         </div>
