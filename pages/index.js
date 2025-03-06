@@ -27,7 +27,7 @@ export default function Home() {
 
         {/* Column 2 - Skills & Projects (Sticky) */}
         <div className="hidden md:block md:col-span-1 space-y-4 h-full">
-          <div className="md:sticky md:top-0 h-full flex flex-col">
+          <div className="md:sticky md:top-0 h-full flex flex-col gap-3">
             <Skills />
             <Projects />
           </div>
