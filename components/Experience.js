@@ -1,4 +1,5 @@
 // components/Experience.js
+import Education from './Education'
 const Experience = () => (
   <section className="mb-10 card bg-neutral-800 shadow-lg p-6">
     <h2 className="text-3xl font-bold mb-4">Experience</h2>
@@ -80,6 +81,7 @@ const Experience = () => (
         {/* Add more technologies as needed */}
       </div>
     </div>
+    <Education />
   </section>
 );
 
