@@ -22,15 +22,13 @@ const About = () => (
         </h2>
         <div>
           <p>
-            I’m a creative engineer with a focus on web development, digital
-            marketing, and building smart, scalable solutions for businesses.
+            I’m a creative engineer with a focus on web development and digital
+            marketing.
             During the week, I manage digital marketing for Gateway Tax
-            Service—running Meta, Google, and TikTok ads, creating landing
-            pages, and using data to drive real growth. I also have hands-on
-            experience developing websites, crafting content, and optimizing
+            Service crafting content, and optimizing webpages and 
             digital campaigns to boost engagement and leads. Outside of that, I
             have over 15 years in the hospitality world, currently bartending on
-            weekends at Delilah in West Hollywood. I also come from a filmmaking
+            weekends. <br /> I also come from a filmmaking
             and photography background, which fuels my creativity and attention
             to detail. I’m passionate about travel, design, and creating
             experyiences. Whether through tech, visuals, or great service I
