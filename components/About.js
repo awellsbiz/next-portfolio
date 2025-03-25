@@ -21,14 +21,14 @@ const About = () => (
           Full Stack Software Developer
         </h2>
         <div>
-          <p>
+          <p className='p-4'>
             I’m a creative engineer with a focus on web development and digital
             marketing.
             During the week, I manage digital marketing for Gateway Tax
             Service crafting content, and optimizing webpages and 
             digital campaigns to boost engagement and leads. Outside of that, I
             have over 15 years in the hospitality world, currently bartending on
-            weekends. <br /> I also come from a filmmaking
+            weekends. <br /> <br /> Comming from a filmmaking
             and photography background, which fuels my creativity and attention
             to detail. I’m passionate about travel, design, and creating
             experyiences. Whether through tech, visuals, or great service I
