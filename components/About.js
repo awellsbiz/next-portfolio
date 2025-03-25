@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Contact from "./Contact";
 
-
 const About = () => (
   <div id="about" className="card bg-neutral-800 shadow-lg p-4 sticky top-0">
     <div className="flex justify-center">
@@ -23,15 +22,21 @@ const About = () => (
         </h2>
         <div>
           <p>
-            Language- and framework-agnostic creative engineer who leverages AI
-            to boost productivity, streamline design, document efficiently, and
-            drive sales through smart, scalable solutions.
+            I’m a creative engineer with a background in filmmaking,
+            photography, and 15+ years in the hospitality world. I’ve always
+            been drawn to great stories, good design, and finding ways to make
+            things more efficient and impactful. These days, I blend all of
+            that—my eye for detail, love for travel and culture, and hands-on
+            experience—with tech to build websites and digital solutions that
+            actually connect with people. I use AI and modern tools to save
+            time, simplify processes, and help businesses grow in smart,
+            scalable ways.
           </p>
         </div>
         <Contact />
-    </div>
       </div>
     </div>
+  </div>
 );
 
 export default About;
