@@ -22,7 +22,7 @@ const About = () => (
         </h2>
         <div>
           <p className='p-4'>
-            I’m a creative engineer with a focus on web development and digital
+            I’m a creative engineer with a focus on web app development and digital
             marketing.
             During the week, I manage digital marketing for Gateway Tax
             Service crafting content, and optimizing webpages and 

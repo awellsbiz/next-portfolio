@@ -16,11 +16,11 @@ const Projects = () => (
             </h2>
             <p className="text-sm text-gray-600">Search for movies and TV shows</p>
             <div className="card-actions justify-center flex-wrap gap-1">
-              <div className="badge badge-outline badge-sm">React</div>
-              <div className="badge badge-outline badge-sm">Node.js</div>
-              <div className="badge badge-outline badge-sm">Express</div>
-              <div className="badge badge-outline badge-sm">MongoDB</div>
-              <div className="badge badge-outline badge-sm">OMDB API</div>
+              <div className="badge badge-outline badge-sm text-[rgba(252,129,128,1)]">React</div>
+              <div className="badge badge-outline badge-sm text-[rgba(252,129,128,1)]">Node.js</div>
+              <div className="badge badge-outline badge-sm text-[rgba(252,129,128,1)]">Express</div>
+              <div className="badge badge-outline badge-sm text-[rgba(252,129,128,1)]">MongoDB</div>
+              <div className="badge badge-outline badge-sm text-[rgba(252,129,128,1)]">OMDB API</div>
             </div>
             <a
               href="https://cinesearch-mavericks.netlify.app/"
@@ -42,9 +42,9 @@ const Projects = () => (
             </h2>
             <p className="text-sm text-gray-600">Website for a Blinds Company in Florida</p>
             <div className="card-actions justify-center flex-wrap gap-1">
-              <div className="badge badge-outline badge-primary badge-sm">Webflow</div>
-              <div className="badge badge-outline badge-sm">Javascript</div>
-              <div className="badge badge-outline badge-sm">Go High Level</div>
+              <div className="badge badge-outline badge-primary badge-sm text-[rgba(252,129,128,1)]">Webflow</div>
+              <div className="badge badge-outline badge-sm text-[rgba(252,129,128,1)]">Javascript</div>
+              <div className="badge badge-outline badge-sm text-[rgba(252,129,128,1)]">Go High Level</div>
             </div>
             <a
               href="https://peakyblindsus.com/"
