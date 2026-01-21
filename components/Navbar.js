@@ -3,7 +3,7 @@ import ScrollLink from './ScrollLink';
 
 export default function Navbar() {
   return (
-    <nav className="navbar sticky top-0 mx-auto flex items-center justify-center rounded-full p-[calc(var(--space-mobile-gap)/2)] shadow-[var(--shadow-inset-1)] max-w-xs bg-[var(--surface-utility)] z-50">
+    <nav className="navbar mx-auto flex items-center justify-center rounded-full p-[calc(var(--space-mobile-gap)/2)] shadow-[var(--shadow-inset-1)] max-w-xs bg-[var(--surface-utility)] z-50">
       <a className="btn btn-ghost rounded-full text-xl">Anthony Wells </a>
       <div className="dropdown">
         <div tabIndex="0" role="button" className="btn btn-circle btn-ghost">

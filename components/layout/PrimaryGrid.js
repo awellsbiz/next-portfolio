@@ -6,7 +6,7 @@ export default function PrimaryGrid({
 }) {
   return (
     <Component
-      className={`md:grid md:grid-cols-3 gap-4 ${className}`.trim()}
+      className={`md:grid md:grid-cols-4 gap-[var(--grid-gap)] ${className}`.trim()}
       {...props}
     >
       {children}

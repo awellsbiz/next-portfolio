@@ -41,7 +41,11 @@
   --grid-primary-width: 66.5rem;
   --grid-rail-width: 19.5rem;
   --grid-gap: 1.75rem;
-  --grid-row-height: 32.125rem;
+  --grid-row-height: 15rem;
+
+  /* define distinct --grid-gap-x and --grid-gap-y */
+  --grid-gap-x: 1.75rem;
+  --grid-gap-y: 1.75rem;
 
   --rail-gap: 1.75rem;
   --rail-icon-gap: 1.2rem;
@@ -50,4 +54,5 @@
 
   /* Mobile image constraints */
   --mobile-image-max-height: 18rem;
+  
 }

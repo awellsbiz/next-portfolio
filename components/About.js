@@ -4,7 +4,7 @@ import Contact from "./Contact";
 import Card from "./Card";
 
 const About = () => (
-  <Card id="about" className="card p-[var(--space-mobile-gap)] sticky top-0">
+  <Card id="about" className="card p-[var(--space-mobile-gap)]">
     <div className="flex justify-center">
       <div className="text-center flex flex-col items-center gap-4">
         <div className="avatar p-[calc(var(--space-mobile-gap)/2)]">
