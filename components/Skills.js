@@ -1,6 +1,6 @@
 // components/Skills.js
-import { FaHtml5, FaCss3Alt, FaSass, FaBootstrap, FaJs, FaVuejs, FaAngular, FaJava, FaNodeJs, FaGit, FaGithub, FaFigma, FaJira, FaDocker } from 'react-icons/fa';
-import { SiTypescript, SiJasmine, SiJest, SiSpring, SiPostman, SiI18Next, SiKubernetes } from 'react-icons/si';
+import { FaHtml5, FaCss3Alt, FaJs, FaJava, FaNodeJs, FaGit, FaGithub, FaFigma } from 'react-icons/fa';
+import { SiTypescript, SiSpring, SiPostman, SiI18Next } from 'react-icons/si';
 
 const skills = [
   { name: 'HTML5', icon: <FaHtml5 /> },

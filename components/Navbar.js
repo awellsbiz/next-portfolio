@@ -1,6 +1,4 @@
 // built in link component to link to routes
-import React from 'react';
-import { useState, useRef, useEffect } from 'react';
 import ScrollLink from './ScrollLink';
 
 export default function Navbar() {

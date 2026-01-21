@@ -18,7 +18,7 @@ export default function Home() {
       <main className="md:grid md:grid-cols-3 gap-4">
         {/* Column 1 - About (Sticky) */}
         <div className="md:col-span-1 space-y-4">
-          <div className="md:sticky md:top-0 flex flex-col">
+          <div className="md:sticky md:top-0 md:h-screen flex flex-col">
             <About />
           </div>
         </div>

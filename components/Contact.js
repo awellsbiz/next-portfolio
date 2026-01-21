@@ -1,8 +1,6 @@
 import {
-  AiOutlineFileText,
   AiOutlineGithub,
   AiOutlineLinkedin,
-  AiOutlineMail,
   AiOutlineTwitter,
   AiOutlineInstagram,
 } from 'react-icons/ai';
