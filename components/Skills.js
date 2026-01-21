@@ -1,6 +1,7 @@
 // components/Skills.js
 import { FaHtml5, FaCss3Alt, FaJs, FaJava, FaNodeJs, FaGit, FaGithub, FaFigma } from 'react-icons/fa';
 import { SiTypescript, SiSpring, SiPostman, SiI18Next } from 'react-icons/si';
+import Card from './Card';
 
 const skills = [
   { name: 'HTML5', icon: <FaHtml5 /> },
@@ -18,7 +19,7 @@ const skills = [
 ];   
 
 const Skills = () => (
-    <section className="bg-neutral-800 p-4 rounded-lg shadow-lg">
+    <Card as="section" className="p-[var(--space-mobile-gap)]">
       <h2 className="text-3xl font-bold mb-4">Skills</h2>
     <div className="flex flex-wrap">
       {skills.map((skill) => (
@@ -31,7 +32,7 @@ const Skills = () => (
         </span>
       ))}
     </div>
-    </section>
+    </Card>
   );
   
   export default Skills;

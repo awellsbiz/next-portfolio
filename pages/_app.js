@@ -1,5 +1,6 @@
 // top top level of next app
 import 'tailwindcss/tailwind.css';
+import '../styles/tokens.css';
 import { Analytics } from '@vercel/analytics/react';
 
 

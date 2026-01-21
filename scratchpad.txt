@@ -1,20 +1,107 @@
-THIS IS TO ADD TO THE NAV BAR
+Phases for the change:
 
-  <div className={styles.links}>
-              {/* <div>
-              <p> This i where </p>
-              </div> */}
-              <div>
-             <Link href='https://www.linkedin.com/in/awells91' > <AiOutlineLinkedin size={30} className=' mx-auto' /></Link>
-              </div>
-              <div>
-             
-              <Link href='https://github.com/awellsbiz' ><AiOutlineGithub size={30} className=' mx-auto'/> </Link>
-              </div>
-              <div>
-              <Link href='https://docs.google.com/document/d/1efuLRUtLvXwkOv10GAth3UacO26smOK92LAPJD_oABc/edit?usp=sharing' > <AiOutlineFileText size={30} className=' mx-auto' /></Link>
-              </div>
-            
-            </div>
+Below is the ordered implementation plan (phases + commits) to integrate the finalized grid, tokens, and surface system. It adheres to all Architect and Implementation rules, preserves behavior, and avoids layout/visual changes until tokens and primitives are in place.
 
--------------
+## Implementation Plan (Phases + Commits)
+
+### Phase 1 — Baseline cleanup (JSX correctness & dead code only)
+**Goal:** Safe cleanup with zero visual/layout change.  
+**Commit(s):**
+- `cleanup: fix JSX correctness and remove unused imports`
+- `cleanup: remove dead markup or unused components (no behavior change)`
+
+**Risk points:**  
+- Removing “unused” code that is actually referenced dynamically.  
+- JSX fixes that unintentionally alter DOM structure.
+
+---
+
+### Phase 2 — Token introduction (no visual changes)
+**Goal:** Add tokens in a centralized place without using them yet.  
+**Commit(s):**
+- `chore: define color and surface CSS tokens per spec`
+- `chore: define spacing and radius tokens per spec`
+
+**Risk points:**  
+- Introducing tokens in multiple places or per-component definitions (violates system).  
+- Accidental usage of tokens before primitives are ready.
+
+---
+
+### Phase 3 — Primitive layer (Card + layout wrappers only, no adoption yet)
+**Goal:** Introduce primitives that map directly to tokens; do not swap existing components yet.  
+**Commit(s):**
+- `feat: add Card primitive wired to surface tokens`
+- `feat: add layout wrappers for grid + rail (not used yet)`
+
+**Risk points:**  
+- Primitive styles accidentally differ from current card visuals.  
+- Wrapper defaults that impose layout changes implicitly.
+
+---
+
+### Phase 4 — Token adoption (swap raw values → tokens in place)
+**Goal:** Replace inline colors/spacing/border values with tokens but keep layout the same.  
+**Commit(s):**
+- `refactor: replace inline colors with tokens (no layout change)`
+- `refactor: replace spacing/radius values with tokens (no layout change)`
+
+**Risk points:**  
+- Missing a token mapping and introducing a new arbitrary value.  
+- Token values not matching current visuals (causes visual drift).
+
+---
+
+### Phase 5 — Primitive adoption (component-by-component)
+**Goal:** Swap existing card-like markup for the `Card` primitive with no visual change.  
+**Commit(s):**
+- `refactor: migrate About card to Card primitive`
+- `refactor: migrate Experience card to Card primitive`
+- `refactor: migrate Education card to Card primitive`
+- (continue per component)
+
+**Risk points:**  
+- Card padding/radius not matching existing layout; causes subtle shifts.  
+- Unintended DOM or accessibility changes.
+
+---
+
+### Phase 6 — Layout wrapper adoption (grid + rail)
+**Goal:** Apply grid + rail wrappers without changing layout yet; keep same structure.  
+**Commit(s):**
+- `refactor: wrap primary bento area with grid wrapper`
+- `refactor: wrap utility rail with rail wrapper`
+
+**Risk points:**  
+- Introducing grid/flex where it previously wasn’t used, altering flow.  
+- Violating “rail ≠ grid” separation.
+
+---
+
+### Phase 7 — Grid spec enforcement (final alignment with spec)
+**Goal:** Apply finalized grid dimensions and placements **only after** tokens + primitives are fully integrated.  
+**Commit(s):**
+- `refactor: apply primary grid column/row specs and placements`
+- `refactor: apply utility rail sizing and spacing per spec`
+- `refactor: enforce mobile single-column rules`
+
+**Risk points:**  
+- Any mismatch in spans or fractional placement from spec.  
+- Mobile rules accidentally using grid or side-by-side content.
+
+---
+
+### Phase 8 — Final cleanup + validation
+**Goal:** Remove legacy styling, ensure no drift, and validate invariants.  
+**Commit(s):**
+- `cleanup: remove deprecated layout/styles`
+- `chore: verify no arbitrary values remain`
+
+**Risk points:**  
+- Removing styles still relied on by remaining components.  
+- Missing a tokenized value causing regressions.
+
+---
+
+## Ready to Proceed
+I’m ready to proceed when you want to start the refactor.

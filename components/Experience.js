@@ -1,16 +1,17 @@
 // components/Experience.js
 import Education from './Education'
+import Card from './Card';
 const Experience = () => (
-  <section className="mb-10 card bg-neutral-800 shadow-lg p-6">
+  <Card as="section" className="mb-10 card">
     <h2 className="text-3xl font-bold mb-4">Experience</h2>
     <div className="mb-8">
-      <h3 className="text-xl font-semibold text-red-500">
+      <h3 className="text-xl font-semibold text-[var(--accent-primary)]">
         Digital Marketing Manager | Gateway Tax Service
       </h3>
-      <p className="text-sm text-gray-400">
+      <p className="text-sm text-[var(--text-muted)]">
         December 2024 - Present | Inglewood, CA - Hybrid
       </p>
-      <p className="mt-4 text-gray-300">
+      <p className="mt-4 text-[var(--text-secondary)]">
         Spearheaded the 2024 tax season digital marketing campaign by launching
         targeted Facebook, Instagram, and TikTok ads, driving a 15%+
         week-over-week increase in lead generation. Developed and standardized
@@ -34,13 +35,13 @@ const Experience = () => (
       </div>
     </div>
     <div className="mb-8">
-      <h3 className="text-xl font-semibold text-red-500">
+      <h3 className="text-xl font-semibold text-[var(--accent-primary)]">
         Web Developer | Max Market Pros
       </h3>
-      <p className="text-sm text-gray-400">
+      <p className="text-sm text-[var(--text-muted)]">
         December 2024 - Present | Ivine, CA - Hybrid
       </p>
-      <p className="mt-4 text-gray-300">
+      <p className="mt-4 text-[var(--text-secondary)]">
         Built responsive websites for small businesses using Figma, Webflow,
         HTML, CSS, and JavaScript to ensure smooth user experiences across all
         devices. Helped clients generate more leads by applying SEO best
@@ -57,13 +58,13 @@ const Experience = () => (
       </div>
     </div>
     <div className="mb-8">
-      <h3 className="text-xl font-semibold text-red-500">
+      <h3 className="text-xl font-semibold text-[var(--accent-primary)]">
         Full Stack Engineer | CSI Studios 
       </h3>
-      <p className="text-sm text-gray-400">
+      <p className="text-sm text-[var(--text-muted)]">
       Oct 2023 - Dec 2023 | Los Angeles, CA
       </p>
-      <p className="mt-4 text-gray-300">
+      <p className="mt-4 text-[var(--text-secondary)]">
         Led the requirement gathering and analysis for C&I Studios’ SVOD
         service, turning client needs into clear development docs and assets
         like wireframes, ERDs, and MVP plans. Redesigned the front end with
@@ -82,7 +83,7 @@ const Experience = () => (
       </div>
     </div>
     <Education />
-  </section>
+  </Card>
 );
 
 export default Experience;

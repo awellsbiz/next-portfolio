@@ -53,10 +53,9 @@ Never change opacity per component
 
 
 4) Grain / Noise Overlay Token
-This is not optional — it’s part of the surface system.
---surface-noise-opacity: 0.03
 Applied as:
 SVG noise OR repeating PNG
+Remaind me to import assets when we need them
 
 
 Monochrome
@@ -175,3 +174,14 @@ Create surface utility classes
 
 
 Or design the light-mode inversion cleanly
+## Styling System (Authoritative)
+
+- **Styling framework:** Tailwind CSS
+- All styling must be expressed via Tailwind utilities or Tailwind tokens
+- Raw CSS is allowed **only** for:
+  - noise / grain overlays
+  - keyframes
+  - browser-level resets
+- No inline styles
+- No ad-hoc CSS classes outside Tailwind
+- No per-component CSS files unless approved by Architect
