@@ -1,5 +1,6 @@
 // pages/index.js
 import Head from "next/head";
+import { useState } from "react";
 import AboutCard from "../components/home/AboutCard";
 import CtaCard from "../components/home/CtaCard";
 import HeroCard from "../components/home/HeroCard";
@@ -12,9 +13,15 @@ import SecondaryWorkImageCardTwo from "../components/home/SecondaryWorkImageCard
 import SocialLinksCard from "../components/home/SocialLinksCard";
 import StackCard from "../components/home/StackCard";
 import ToggleCard from "../components/home/ToggleCard";
+import Experience from "../components/Experience";
+import Education from "../components/Education";
+import Modal from "../components/Modal";
+import ServicesModal from "../components/services/ServicesModal";
 
 export default function Home() {
   const mobileCardPadding = "p-[var(--space-card-padding-mobile)]";
+  const [isResumeOpen, setIsResumeOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   return (
     <div className="bg-[var(--bg-root)] text-[var(--text-primary)]">
@@ -26,7 +33,11 @@ export default function Home() {
       <main className="mx-auto max-w-[var(--grid-max-width)] px-[var(--grid-side-padding)] py-[var(--space-card-padding)]">
         <div className="flex flex-col md:hidden">
           <div className="flex flex-col gap-[var(--space-mobile-gap)]">
-            <HeroCard className={mobileCardPadding} />
+            <HeroCard
+              className={mobileCardPadding}
+              onResumeOpen={() => setIsResumeOpen(true)}
+              onServicesOpen={() => setIsServicesOpen(true)}
+            />
             <AboutCard className={mobileCardPadding} />
           </div>
           <div className="mt-[var(--space-section-break)] flex flex-col gap-[var(--space-mobile-gap)]">
@@ -48,7 +59,11 @@ export default function Home() {
             {/* Primary grid — Row 1: Hero | Image 1 | Image 2 */}
             <div className="grid grid-cols-4 grid-rows-[repeat(3,var(--grid-row-height))] items-stretch gap-x-[var(--grid-gap-x)] gap-y-[var(--grid-gap-y)]">
               {/* Row 1 */}
-              <HeroCard className="col-span-2 row-start-1 h-full" />
+              <HeroCard
+                className="col-span-2 row-start-1 h-full"
+                onResumeOpen={() => setIsResumeOpen(true)}
+                onServicesOpen={() => setIsServicesOpen(true)}
+              />
               <SecondaryWorkImageCardOne className="col-span-1 row-start-1 h-full" />
               <SecondaryWorkImageCardTwo className="col-span-1 row-start-1 h-full" />
 
@@ -66,11 +81,25 @@ export default function Home() {
 
           {/* Utility rail — Resources | CTA | Social */}
           <div className="flex flex-col gap-[var(--rail-gap)]">
-            <ResourcesCard className="h-[var(--rail-resources-height)]" />
             <CtaCard className="h-[var(--rail-cta-height)]" />
             <SocialLinksCard />
+            <ResourcesCard className="h-[var(--rail-resources-height)]" />
           </div>
         </div>
+        <Modal
+          isOpen={isResumeOpen}
+          onClose={() => setIsResumeOpen(false)}
+          title="Resume"
+        >
+          <div className="flex flex-col gap-[var(--space-section-break)]">
+            <Experience />
+            <Education />
+          </div>
+        </Modal>
+        <ServicesModal
+          isOpen={isServicesOpen}
+          onClose={() => setIsServicesOpen(false)}
+        />
       </main>
     </div>
   );

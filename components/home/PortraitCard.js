@@ -5,7 +5,7 @@ export default function PortraitCard({ className = '' }) {
   return (
     <Card className={`p-0 overflow-hidden ${className}`.trim()}>
       <Image
-        src="/update.jpg"
+        src="/Awells.jpg"
         alt="Portrait"
         width={560}
         height={700}

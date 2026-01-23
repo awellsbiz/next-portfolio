@@ -2,9 +2,9 @@
 import Education from './Education'
 import Card from './Card';
 const Experience = () => (
-  <Card as="section" className="mb-10 card">
+  <Card as="section" className="mb-3 card">
     <h2 className="text-3xl font-bold mb-4">Experience</h2>
-    <div className="mb-8">
+    <div className="mb-2">
       <h3 className="text-xl font-semibold text-[var(--accent-primary)]">
         Digital Marketing Manager | Gateway Tax Service
       </h3>
@@ -57,7 +57,7 @@ const Experience = () => (
         {/* Add more technologies as needed */}
       </div>
     </div>
-    <div className="mb-8">
+    <div className="">
       <h3 className="text-xl font-semibold text-[var(--accent-primary)]">
         Full Stack Engineer | CSI Studios 
       </h3>
@@ -82,7 +82,6 @@ const Experience = () => (
         {/* Add more technologies as needed */}
       </div>
     </div>
-    <Education />
   </Card>
 );
 
