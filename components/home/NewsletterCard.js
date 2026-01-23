@@ -5,9 +5,9 @@ export default function NewsletterCard({ className = '' }) {
     <Card className={`flex flex-col gap-4 ${className}`.trim()}>
       <h2 className="text-xl font-semibold">Newsletter</h2>
       <p className="text-[var(--text-secondary)]">
-        Monthly notes on product strategy, UX systems, and front-end delivery.
+        Comming Soon... 
       </p>
-      <div className="flex flex-col gap-2">
+      {/* <div className="flex flex-col gap-2">
         <input
           type="email"
           placeholder="you@example.com"
@@ -19,7 +19,7 @@ export default function NewsletterCard({ className = '' }) {
         >
           Join list
         </button>
-      </div>
+      </div> */}
     </Card>
   );
 }

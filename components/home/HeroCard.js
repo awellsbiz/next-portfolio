@@ -14,9 +14,7 @@ export default function HeroCard({
         <h1 className="text-4xl font-semibold">Anthony Wells</h1>
       </div>
       <p className="text-[var(--text-secondary)]">
-        I build clear, fast web experiences with a focus on craft, systems, and
-        measurable impact.
-      </p>
+      I build software and marketing websites with a focus on secure system design, access control, data protection, and risk-aware decisions across the lifecycle.      </p>
       <div className="flex gap-2 justify-center">
         <button
           type="button"

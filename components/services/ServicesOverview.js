@@ -56,6 +56,9 @@ export default function ServicesOverview({ onSelect, viewKeys }) {
           Limited concurrent projects
         </p>
         <p className="text-sm text-[var(--text-secondary)]">
+          Retainer-based pricing
+        </p>
+        <p className="text-sm text-[var(--text-secondary)]">
           Long-term engagements only
         </p>
       </Card>

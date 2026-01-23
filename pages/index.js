@@ -17,11 +17,24 @@ import Experience from "../components/Experience";
 import Education from "../components/Education";
 import Modal from "../components/Modal";
 import ServicesModal from "../components/services/ServicesModal";
+import CaseStudyModal from "../components/case-studies/CaseStudyModal";
+import caseStudies from "../components/case-studies/caseStudies";
 
 export default function Home() {
   const mobileCardPadding = "p-[var(--space-card-padding-mobile)]";
   const [isResumeOpen, setIsResumeOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isCaseStudyOpen, setIsCaseStudyOpen] = useState(false);
+  const [activeCaseStudyId, setActiveCaseStudyId] = useState(null);
+
+  const activeCaseStudy = caseStudies.find(
+    (study) => study.id === activeCaseStudyId
+  );
+
+  const handleCaseStudyOpen = (caseStudyId) => {
+    setActiveCaseStudyId(caseStudyId);
+    setIsCaseStudyOpen(true);
+  };
 
   return (
     <div className="bg-[var(--bg-root)] text-[var(--text-primary)]">
@@ -41,9 +54,18 @@ export default function Home() {
             <AboutCard className={mobileCardPadding} />
           </div>
           <div className="mt-[var(--space-section-break)] flex flex-col gap-[var(--space-mobile-gap)]">
-            <PrimaryWorkImageCard />
-            <SecondaryWorkImageCardOne />
-            <SecondaryWorkImageCardTwo />
+            <PrimaryWorkImageCard
+              caseStudyId="cinesearch"
+              onOpenCaseStudy={handleCaseStudyOpen}
+            />
+            <SecondaryWorkImageCardOne
+              caseStudyId="peaky-blinds"
+              onOpenCaseStudy={handleCaseStudyOpen}
+            />
+            <SecondaryWorkImageCardTwo
+              caseStudyId="game"
+              onOpenCaseStudy={handleCaseStudyOpen}
+            />
           </div>
           <div className="mt-[var(--space-section-break)] flex flex-col gap-[var(--space-mobile-gap)]">
             <ResourcesCard className={mobileCardPadding} />
@@ -64,13 +86,25 @@ export default function Home() {
                 onResumeOpen={() => setIsResumeOpen(true)}
                 onServicesOpen={() => setIsServicesOpen(true)}
               />
-              <SecondaryWorkImageCardOne className="col-span-1 row-start-1 h-full" />
-              <SecondaryWorkImageCardTwo className="col-span-1 row-start-1 h-full" />
+              <SecondaryWorkImageCardOne
+                className="col-span-1 row-start-1 h-full"
+                caseStudyId="peaky-blinds"
+                onOpenCaseStudy={handleCaseStudyOpen}
+              />
+              <SecondaryWorkImageCardTwo
+                className="col-span-1 row-start-1 h-full"
+                caseStudyId="game"
+                onOpenCaseStudy={handleCaseStudyOpen}
+              />
 
               {/* Row 2: Portrait | About | Feature image */}
               <PortraitCard className="col-span-1 row-start-2 h-full" />
               <AboutCard className="col-span-2 row-start-2 h-full" />
-              <PrimaryWorkImageCard className="col-span-1 row-start-2 h-full" />
+              <PrimaryWorkImageCard
+                className="col-span-1 row-start-2 h-full"
+                caseStudyId="cinesearch"
+                onOpenCaseStudy={handleCaseStudyOpen}
+              />
 
               {/* Row 3: Newsletter | Stack | Toggle */}
               <NewsletterCard className="col-span-2 row-start-3 h-full" />
@@ -99,6 +133,11 @@ export default function Home() {
         <ServicesModal
           isOpen={isServicesOpen}
           onClose={() => setIsServicesOpen(false)}
+        />
+        <CaseStudyModal
+          isOpen={isCaseStudyOpen}
+          onClose={() => setIsCaseStudyOpen(false)}
+          caseStudy={activeCaseStudy}
         />
       </main>
     </div>
