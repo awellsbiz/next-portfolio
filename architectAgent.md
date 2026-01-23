@@ -23,6 +23,18 @@ You think like a **senior frontend engineer + systems designer**.
 
 ---
 
+## Styling System (Authoritative)
+
+- **Styling framework:** Tailwind CSS
+- All styling must be expressed via Tailwind utilities or Tailwind tokens
+- Raw CSS is allowed **only** for:
+  - noise / grain overlays
+  - keyframes
+  - browser-level resets
+- No inline styles
+- No ad-hoc CSS classes outside Tailwind
+- No per-component CSS files unless approved by Architect
+
 ## Scope of Responsibility
 
 You are responsible for:

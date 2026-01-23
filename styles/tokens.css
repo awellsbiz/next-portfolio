@@ -1,0 +1,58 @@
+:root {
+  /* Core background */
+  --bg-root: #0A0A0B;
+
+  /* Surface tokens */
+  --surface-card: #141416;
+  --surface-card-hover: #18181B;
+  --surface-utility: #161618;
+
+  /* Border tokens */
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-faint: rgba(255, 255, 255, 0.03);
+
+  /* Text tokens */
+  --text-primary: #F4F4F5;
+  --text-secondary: #A1A1AA;
+  --text-muted: #71717A;
+  --text-disabled: #52525B;
+
+  /* Accent tokens */
+  --accent-primary: #EDEDED;
+  --accent-surface: #1F1F22;
+
+  /* Shadow tokens */
+  --shadow-inset-1: inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+
+  /* Spacing + radius tokens */
+  --space-major: 1.75rem;
+  --space-minor: 1.2rem;
+  --space-card-padding: 1.5rem;
+  --space-card-padding-mobile: 1.25rem;
+  --space-mobile-gap: 1rem;
+  --space-section-break: 1.5rem;
+  --radius-card: 1.25rem;
+
+  /* Grid + rail dimension tokens */
+  --grid-max-width: 92rem;
+  --grid-side-padding: 2rem;
+  --grid-usable-width: 88rem;
+  --grid-primary-width: 66.5rem;
+  --grid-rail-width: 19.5rem;
+  --grid-gap: 1.25rem;
+  --grid-row-height: 15.7rem;
+
+  /* define distinct --grid-gap-x and --grid-gap-y */
+  --grid-gap-x: 1rem;
+  --grid-gap-y: 1.1rem;
+
+  --rail-gap: 1.75rem;
+  --rail-icon-gap: 1.2rem;
+  --rail-resources-height: 20rem;
+  --rail-cta-height: 15rem;
+
+  /* Mobile image constraints */
+  --mobile-image-max-height: 18rem;
+  
+}
