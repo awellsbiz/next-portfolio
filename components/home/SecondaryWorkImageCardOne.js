@@ -14,7 +14,7 @@ export default function SecondaryWorkImageCardOne({
       <button
         type="button"
         onClick={() => onOpenCaseStudy?.(caseStudyId)}
-        className="bg-[var(--accent-primary)] text-[var(--accent-surface)] hover:bg-[var(--accent-surface)] hover:text-[var(--accent-primary)] absolute bottom-4 left-1/2 -translate-x-1/2 z-10 rounded-[calc(var(--radius-card)/2)] border border-[var(--accent-surface)] px-3 py-1 text-xs text-[var(--text-primary)]"
+        className="bg-[var(--accent-primary)] text-[var(--accent-surface)] hover:bg-[var(--accent-surface)] hover:text-[var(--accent-primary)] absolute bottom-4 left-1/2 -translate-x-1/2 z-10 rounded-[calc(var(--radius-card)/2)] border border-[var(--accent-surface)] px-3 py-1 text-xs"
       >
         View details
       </button>
