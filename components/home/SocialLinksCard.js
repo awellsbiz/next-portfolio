@@ -4,7 +4,7 @@ import Card from '../Card';
 const links = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/awells91/', icon: AiOutlineLinkedin },
   { label: 'GitHub', href: 'https://github.com/awellsbiz', icon: AiOutlineGithub },
-  { label: 'Instagram', href: 'https://www.instagram.com/awells91/', icon: AiOutlineInstagram },
+  { label: 'Instagram', href: 'https://www.instagram.com/a.wells/', icon: AiOutlineInstagram },
   // { label: 'Youtube', href: 'https://www.youtube.com/@awells91', icon: AiOutlineYoutube },
   // { label: 'TikTok', href: 'https://www.tiktok.com/@awells91', icon: AiOutlineTikTok },
 
