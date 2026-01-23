@@ -1,16 +1,21 @@
 import Card from '../Card';
 
 const resources = [
-  { label: 'Case studies', href: '#case-studies' },
-  { label: 'Process notes', href: '#process' },
-  { label: 'Client references', href: '#references' },
+  // { label: 'Case studies', href: '#case-studies' },
+  // { label: 'Process notes', href: '#process' },
+  // { label: 'Client references', href: '#references' },
+  // comming soon
+  { label: 'Resources Coming Soon...', href: '#' },
 ];
 
 export default function ResourcesCard({ className = '' }) {
   return (
     <Card className={`flex flex-col gap-4 bg-[var(--surface-utility)] ${className}`.trim()}>
       <h2 className="text-xl font-semibold">Resources</h2>
-      <ul className="flex flex-col gap-2 text-sm text-[var(--text-secondary)]">
+      <p className="text-[var(--text-secondary)]">
+        Resources Coming Soon...
+      </p>
+      {/* <ul className="flex flex-col gap-2 text-sm text-[var(--text-secondary)]">
         {resources.map((resource) => (
           <li key={resource.label}>
             <a
@@ -22,7 +27,7 @@ export default function ResourcesCard({ className = '' }) {
             </a>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </Card>
   );
 }

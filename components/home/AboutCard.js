@@ -8,7 +8,7 @@ export default function AboutCard({ className = '' }) {
       I’m an AI-first software engineer focused on building secure, reliable web platforms and marketing systems. I help founders and teams solve real problems by designing systems that support clear execution, collaboration, and long-term maintainability.
       </p>
       <p className="text-sm text-[var(--text-muted)]">
-        Based in Los Angeles · Available for select collaborations.
+        Based in Los Angeles · Open to new opportunities & Relocation
       </p>
     </Card>
   );

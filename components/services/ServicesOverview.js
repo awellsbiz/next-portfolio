@@ -3,7 +3,7 @@ import Card from '../Card';
 export default function ServicesOverview({ onSelect, viewKeys }) {
   return (
     <div className="flex flex-col gap-[var(--space-minor)]">
-      <Card className="flex flex-col gap-3">
+      <Card className="bg-[var(--accent-surface)] flex flex-col gap-3">
         <h3 className="text-lg font-semibold">End-to-End Product Development</h3>
         <p className="text-sm text-[var(--text-secondary)]">
           Strategy to launch. Product planning, architecture, delivery, and
