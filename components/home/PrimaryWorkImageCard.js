@@ -18,7 +18,7 @@ export default function PrimaryWorkImageCard({
         View details
       </button>
       <Image
-        src="/mockup1.jpg"
+        src="/mockup4.jpg"
         alt="Primary work preview"
         width={820}
         height={640}
