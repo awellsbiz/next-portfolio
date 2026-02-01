@@ -1,11 +1,9 @@
 // top top level of next app
-import Head from 'next/head';
-import Script from 'next/script';
-import 'tailwindcss/tailwind.css';
-import '../styles/tokens.css';
-import { Analytics } from '@vercel/analytics/react';
-
-
+import Head from "next/head";
+import Script from "next/script";
+import "tailwindcss/tailwind.css";
+import "../styles/tokens.css";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App({ Component, pageProps }) {
   return (

@@ -37,14 +37,17 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-[var(--bg-root)] text-[var(--text-primary)]">
+    <div className="bg-[var(--bg-root)] text-[var(--text-primary)] h-screen">
       <Head>
-        <title>Anthony Wells - Portfolio</title>
+        <title>Anthony Wells' - Portfolio</title>
         <meta name="description" content="Anthony Wells' portfolio" />
 
         {/* Open Graph */}
         <meta property="og:title" content="Anthony Wells - Portfolio" />
-        <meta property="og:description" content="Anthony Wells' portfolio" />
+        <meta
+          property="og:description"
+          content="Los Angeles–based full-stack, AI-first software engineer with 3+ years of experience building modern apps using React, TypeScript, and SQL."
+        />
         <meta
           property="og:image"
           content="https://anthonywells.codes/Awells.jpg"
