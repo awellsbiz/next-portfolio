@@ -28,7 +28,7 @@ export default function Home() {
   const [activeCaseStudyId, setActiveCaseStudyId] = useState(null);
 
   const activeCaseStudy = caseStudies.find(
-    (study) => study.id === activeCaseStudyId
+    (study) => study.id === activeCaseStudyId,
   );
 
   const handleCaseStudyOpen = (caseStudyId) => {
@@ -41,6 +41,16 @@ export default function Home() {
       <Head>
         <title>Anthony Wells - Portfolio</title>
         <meta name="description" content="Anthony Wells' portfolio" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Anthony Wells - Portfolio" />
+        <meta property="og:description" content="Anthony Wells' portfolio" />
+        <meta
+          property="og:image"
+          content="https://anthonywells.codes/Awells.jpg"
+        />
+        <meta property="og:url" content="https://anthonywells.codes" />
+        <meta property="og:type" content="website" />
       </Head>
 
       <main className="mx-auto max-w-[var(--grid-max-width)] px-[var(--grid-side-padding)] py-[var(--space-card-padding)]">
