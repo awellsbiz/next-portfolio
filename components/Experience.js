@@ -1,6 +1,6 @@
 // components/Experience.js
-import Education from './Education'
-import Card from './Card';
+import Education from "./Education";
+import Card from "./Card";
 const Experience = () => (
   <Card as="section" className="mb-3 card">
     <h2 className="text-3xl font-bold mb-4">Experience</h2>
@@ -12,13 +12,19 @@ const Experience = () => (
         Jul 2025 - Present | Remote
       </p>
       <p className="mt-4 text-[var(--text-secondary)]">
-      I’ve worked across multiple full-stack projects, ranging from production legal applications to marketing and SEO-driven web platforms, owning systems end to end from requirements and architecture through deployment and production support. My work includes designing databases and application flows, implementing secure authentication and role-based access, integrating payments, and building automated document and data pipelines. I regularly deploy, debug, and maintain systems in production using containerized workflows, with a focus on reliability, security, and maintainability across the full software lifecycle.
+        I’ve worked across multiple full-stack projects, ranging from production
+        legal applications to marketing and SEO-driven web platforms, owning
+        systems end to end from requirements and architecture through deployment
+        and production support. My work includes designing databases and
+        application flows, implementing secure authentication and role-based
+        access, integrating payments, and building automated document and data
+        pipelines. I regularly deploy, debug, and maintain systems in production
+        using containerized workflows, with a focus on reliability, security,
+        and maintainability across the full software lifecycle.
       </p>
       <div className="flex flex-wrap mt-4">
         <span className="badge badge-outline badge-error m-1">React</span>
-        <span className="badge badge-outline badge-error m-1">
-          TypeScript
-        </span>
+        <span className="badge badge-outline badge-error m-1">TypeScript</span>
         <span className="badge badge-outline badge-error m-1">Claude</span>
         <span className="badge badge-outline badge-error m-1">
           System Design
@@ -28,7 +34,7 @@ const Experience = () => (
     </div>
     <div className="mb-2">
       <h3 className="text-xl font-semibold text-[var(--accent-primary)]">
-        Systems Engineer | Gateway Tax Service
+        Digital Marketing Manager | Gateway Tax Service
       </h3>
       <p className="text-sm text-[var(--text-muted)]">
         Dec 2024 - Jun 2025 | Inglewood, CA - Hybrid
@@ -81,10 +87,10 @@ const Experience = () => (
     </div>
     <div className="">
       <h3 className="text-xl font-semibold text-[var(--accent-primary)]">
-        Full Stack Engineer | CSI Studios 
+        Full Stack Engineer | CSI Studios
       </h3>
       <p className="text-sm text-[var(--text-muted)]">
-      Oct 2022 - Nov 2023 | Los Angeles, CA
+        Oct 2022 - Nov 2023 | Los Angeles, CA
       </p>
       <p className="mt-4 text-[var(--text-secondary)]">
         Led the requirement gathering and analysis for C&I Studios’ SVOD
@@ -97,9 +103,7 @@ const Experience = () => (
       </p>
       <div className="flex flex-wrap mt-4">
         <span className="badge badge-outline badge-error m-1">React</span>
-        <span className="badge badge-outline badge-error m-1">
-          Typescript
-        </span>
+        <span className="badge badge-outline badge-error m-1">Typescript</span>
         <span className="badge badge-outline badge-error m-1">Firebase</span>
         {/* Add more technologies as needed */}
       </div>
