@@ -1,10 +1,10 @@
 :root {
   /* Core background */
-  --bg-root: #0A0A0B;
+  --bg-root: #0a0a0b;
 
   /* Surface tokens */
   --surface-card: #141416;
-  --surface-card-hover: #18181B;
+  --surface-card-hover: #18181b;
   --surface-utility: #161618;
 
   /* Border tokens */
@@ -12,17 +12,18 @@
   --border-faint: rgba(255, 255, 255, 0.03);
 
   /* Text tokens */
-  --text-primary: #F4F4F5;
-  --text-secondary: #A1A1AA;
-  --text-muted: #71717A;
-  --text-disabled: #52525B;
+  --text-primary: #f4f4f5;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+  --text-disabled: #52525b;
 
   /* Accent tokens */
-  --accent-primary: #EDEDED;
-  --accent-surface: #1F1F22;
+  --accent-primary: #ededed;
+  --accent-surface: #1f1f22;
 
   /* Shadow tokens */
-  --shadow-inset-1: inset 0 1px 0 rgba(255, 255, 255, 0.04),
+  --shadow-inset-1:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
     inset 0 0 0 1px rgba(255, 255, 255, 0.02);
 
   /* Spacing + radius tokens */
@@ -54,5 +55,8 @@
 
   /* Mobile image constraints */
   --mobile-image-max-height: 18rem;
-  
 }
+/* Set the global background color to --bg-root */
+/* body {
+  background-color: var(--bg-root);
+} */
