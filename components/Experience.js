@@ -9,55 +9,33 @@ const Experience = () => (
         Software Engineer | Self-Employed
       </h3>
       <p className="text-sm text-[var(--text-muted)]">
-        Jul 2025 - Present | Remote
+        Jan 2025 - Present | Remote - Los Angeles, CA
       </p>
       <p className="mt-4 text-[var(--text-secondary)]">
-        I’ve worked across multiple full-stack projects, ranging from production
-        legal applications to marketing and SEO-driven web platforms, owning
-        systems end to end from requirements and architecture through deployment
-        and production support. My work includes designing databases and
-        application flows, implementing secure authentication and role-based
-        access, integrating payments, and building automated document and data
-        pipelines. I regularly deploy, debug, and maintain systems in production
-        using containerized workflows, with a focus on reliability, security,
-        and maintainability across the full software lifecycle.
+        Built full-stack applications for legal and service-based clients,
+        owning everything from requirements to deployment. Designed ETL
+        workflows, multi-stage validation pipelines, and event-driven payment
+        systems so that business workflows run reliably and data stays clean
+        from input to output.
       </p>
       <div className="flex flex-wrap mt-4">
         <span className="badge badge-outline badge-error m-1">React</span>
         <span className="badge badge-outline badge-error m-1">TypeScript</span>
-        <span className="badge badge-outline badge-error m-1">Claude</span>
+        <span className="badge badge-outline badge-error m-1">Python</span>
+        <span className="badge badge-outline badge-error m-1">ETL</span>
+        <span className="badge badge-outline badge-error m-1">Node.js</span>
+        <span className="badge badge-outline badge-error m-1">Express</span>
         <span className="badge badge-outline badge-error m-1">
           System Design
         </span>
-        {/* Add more technologies as needed */}
-      </div>
-    </div>
-    <div className="mb-2">
-      <h3 className="text-xl font-semibold text-[var(--accent-primary)]">
-        Digital Marketing Manager | Gateway Tax Service
-      </h3>
-      <p className="text-sm text-[var(--text-muted)]">
-        Dec 2024 - Jun 2025 | Inglewood, CA - Hybrid
-      </p>
-      <p className="mt-4 text-[var(--text-secondary)]">
-        Spearheaded the 2024 tax season digital marketing campaign by launching
-        targeted Facebook, Instagram, and TikTok ads, driving a 15%+
-        week-over-week increase in lead generation. Developed and standardized
-        daily and weekly reporting documentation to track performance and
-        optimize strategy. Led SEO improvements to enhance organic search
-        rankings on Google, increasing website visibility and engagement.
-        Continuously analyzed ad performance, leveraging A/B testing and
-        audience insights to maximize ROI and improve ad efficiency across
-        multiple platforms.
-      </p>
-      <div className="flex flex-wrap mt-4">
-        <span className="badge badge-outline badge-error m-1">Wordpress</span>
         <span className="badge badge-outline badge-error m-1">
-          Social Media Ads
+          Event-Driven Architecture
         </span>
-        <span className="badge badge-outline badge-error m-1">SEO</span>
         <span className="badge badge-outline badge-error m-1">
-          Instagram Ads
+          Payment Systems
+        </span>
+        <span className="badge badge-outline badge-error m-1">
+          Data Pipelines
         </span>
         {/* Add more technologies as needed */}
       </div>
@@ -70,12 +48,11 @@ const Experience = () => (
         Dec 2023 - Dec 2024 | Ivine, CA - Hybrid
       </p>
       <p className="mt-4 text-[var(--text-secondary)]">
-        Built responsive websites for small businesses using Figma, Webflow,
-        HTML, CSS, and JavaScript to ensure smooth user experiences across all
-        devices. Helped clients generate more leads by applying SEO best
-        practices and conversion-focused UX/UI designs. Also made the
-        development process more efficient by creating style guides and reusable
-        templates, boosting team productivity by 20%.
+        Translated client requirements into system architectures, defining data
+        flows between forms and CRM integrations so that leads moved reliably
+        from capture to sales. Built reusable templates and front-end systems to
+        ensure consistent quick delivery across clients increasing productivity
+        by 20%.
       </p>
       <div className="flex flex-wrap mt-4">
         <span className="badge badge-outline badge-error m-1">HTML</span>
@@ -87,24 +64,22 @@ const Experience = () => (
     </div>
     <div className="">
       <h3 className="text-xl font-semibold text-[var(--accent-primary)]">
-        Full Stack Engineer | CSI Studios
+        Frontend Engineer | Expunge Assist (Open Source)
       </h3>
       <p className="text-sm text-[var(--text-muted)]">
-        Oct 2022 - Nov 2023 | Los Angeles, CA
+        Jun 2023 - Dec 2023 | Remote - Los Angeles, CA
       </p>
       <p className="mt-4 text-[var(--text-secondary)]">
-        Led the requirement gathering and analysis for C&I Studios’ SVOD
-        service, turning client needs into clear development docs and assets
-        like wireframes, ERDs, and MVP plans. Redesigned the front end with
-        React/TypeScript and built a backend API using Express and PostgreSQL
-        for prototyping. Helped the client set up their tech stack via Homebrew
-        CLI and integrated Git/GitHub for version control, creating a smoother,
-        more collaborative workflow.
+        Contributed to a cross-functional team building a React-based legal
+        document generator. Implemented features and resolved bugs through a
+        Kanban workflow to help users generate expungement letters reliably.
       </p>
       <div className="flex flex-wrap mt-4">
         <span className="badge badge-outline badge-error m-1">React</span>
         <span className="badge badge-outline badge-error m-1">Typescript</span>
-        <span className="badge badge-outline badge-error m-1">Firebase</span>
+        <span className="badge badge-outline badge-error m-1">Tailwind</span>
+        <span className="badge badge-outline badge-error m-1">Git</span>
+
         {/* Add more technologies as needed */}
       </div>
     </div>
