@@ -23,7 +23,7 @@ const About = () => (
         </h2>
         <div>
           <p className="p-[var(--space-mobile-gap)]">
-            Backend systems. Clean data. Shipped products.
+            Backend systems. Clean data. Shipped products.  
           </p>
         </div>
         <Contact />
