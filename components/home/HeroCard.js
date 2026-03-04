@@ -1,7 +1,7 @@
-import Card from '../Card';
+import Card from "../Card";
 
 export default function HeroCard({
-  className = '',
+  className = "",
   onResumeOpen,
   onServicesOpen,
 }) {
@@ -14,7 +14,8 @@ export default function HeroCard({
         <h1 className="text-4xl font-semibold">Anthony Wells</h1>
       </div>
       <p className="text-[var(--text-secondary)]">
-      I build software and marketing websites with a focus on secure system design, access control, data protection, and risk-aware decisions across the lifecycle.      </p>
+        Backend systems. Clean data. Shipped products.
+      </p>
       <div className="flex gap-2 justify-center">
         <button
           type="button"
