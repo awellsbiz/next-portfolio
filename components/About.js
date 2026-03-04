@@ -19,12 +19,11 @@ const About = () => (
         </div>
         <h1 className="text-5xl font-bold">Anthony Wells</h1>
         <h2 className="inline-block text-xl bg-[var(--accent-surface)] text-[var(--accent-primary)] p-[calc(var(--space-mobile-gap)/2)] rounded-[var(--radius-card)]">
-          Full Stack Software Developer
+          Software Engineer
         </h2>
         <div>
           <p className="p-[var(--space-mobile-gap)]">
-            I’m a creative engineer with a focus on web app development and digital
-            marketing.
+            Backend systems. Clean data. Shipped products.  
           </p>
         </div>
         <Contact />
