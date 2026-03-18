@@ -1,19 +1,22 @@
-import Card from '../Card';
+import Card from "../Card";
 
-export default function CtaCard({ className = '' }) {
+export default function CtaCard({ className = "" }) {
   const handleCalendlyOpen = () => {
     if (window.Calendly) {
       window.Calendly.initPopupWidget({
-        url: 'https://calendly.com/anthony-wells/coffe-chat',
+        url: "https://calendly.com/awellsbiz/30min",
       });
     }
   };
 
   return (
-    <Card className={`flex flex-col gap-4 bg-[var(--surface-utility)] ${className}`.trim()}>
+    <Card
+      className={`flex flex-col gap-4 bg-[var(--surface-utility)] ${className}`.trim()}
+    >
       <h2 className="text-xl font-semibold">Virtual Coffee Chat</h2>
       <p className="text-[var(--text-secondary)]">
-      Let’s talk 1:1 for 30 minutes — no agenda, no pitch. We’ll discuss your painpoints and see if I can help.
+        Let’s talk 1:1 for 30 minutes — no agenda, no pitch. We’ll discuss your
+        painpoints and see if I can help.
       </p>
       <button
         type="button"
